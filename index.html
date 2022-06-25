@@ -4,40 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TicTacToe</title>
     <link rel="stylesheet" href="style.css">
-    
+    <title>TicTacToe</title>
 </head>
 <body>
     
-    <div id="arcadeGame">
+    <div class="arcadeGame">
         
-        <h1>TicTacToe</h1>
-
-        <p>Grab a friend and play!</p>
-
-        <div id="gameTable">        
+        <h1 class="title">TicTacToe</h1>
+        
+        <div class="gameStatus">
             
-            <div class="cell">x</div>
-            <div class="cell">o</div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
+            <div class="status">x is next!</div>
+            <div class="restart">Restart</div>     
+           
+        </div>
+        <div class="insertPlayers">
+                    
+            <input name="Player 1" placeholder ="Insert P1 Name">
+            <input name="Player 2" placeholder ="Insert P2 Name">
 
         </div>
 
-        <h2 id="gameStatus">Player 1's turn</h2>
         
-        <button id="restartButton">Restart</button>
+
+        <div class="gameTable">        
+            
+            <div class="game-cell" cellIndex="1"></div>
+            <div class="game-cell" cellIndex="2"></div>
+            <div class="game-cell" cellIndex="3"></div>
+            <div class="game-cell" cellIndex="4"></div>
+            <div class="game-cell"></div>
+            <div class="game-cell"></div>
+            <div class="game-cell"></div>
+            <div class="game-cell"></div>
+            <div class="game-cell"></div>
+
+        </div>
 
         
 
-        
+                
     </div>
+    <script scr="app.js"></script>
 
     
 </body>

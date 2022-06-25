@@ -1,39 +1,77 @@
-body{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    justify-content: center;
+    font-family: sans-serif;
+    display: flex;
     background: #252839;
 }
 
-#arcadeGame{
-    text-align: center;
-    
+.arcadeGame {
+    margin: 25px;
+    padding: 25px;
+    border-radius: 25px;
 
 }
-h1{
+
+.title{
     font-size: 50px;
     color: burlywood;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
 }
 
-p{
-    font-size: 12px;
-    color: aquamarine;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.gameTable {
+    display: grid;
+    background: aquamarine;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    margin-top: 25px;
 }
-.cell{
-    width: 100px;
-    height: 100px;
+
+.game-cell {
+    width: 150px;
+    height: 150px;
     border: 2px solid;
     box-shadow: 0 0 0 2px;
-    font-size: 75px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: cyan;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: aqua;
+}
+.game-cell:hover {
+    background: aquamarine;
 }
 
 
-#gameTable{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: repeat(3, auto);
-    margin: auto;
-    
+.gameStatus {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    margin-top: 25px;
+    color: antiquewhite;
+}
+.insertPlayers {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-top: 15px;
+
+}
+.p {
+    color: antiquewhite;
+}
+.restart {
+    cursor: pointer;
+}
+.restart:hover {
+    color: fuchsia;
+}
+
+.insertPlayers {
+
 }
