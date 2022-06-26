@@ -9,44 +9,33 @@
 </head>
 <body>
     
-    <div class="arcadeGame">
+    <main class="arcadeGame">
         
-        <h1 class="title">TicTacToe</h1>
-        
-        <div class="gameStatus">
+        <h1>TicTacToe</h1>
             
-            <div class="status">x is next!</div>
-            <div class="restart">Restart</div>     
-           
-        </div>
-        <div class="insertPlayers">
-                    
-            <input name="Player 1" placeholder ="Insert P1 Name">
-            <input name="Player 2" placeholder ="Insert P2 Name">
+            
+        <div class="status">x is next!</div>
 
-        </div>
-
-        
 
         <div class="gameTable">        
             
-            <div class="game-cell" cellIndex="1"></div>
-            <div class="game-cell" cellIndex="2"></div>
-            <div class="game-cell" cellIndex="3"></div>
-            <div class="game-cell" cellIndex="4"></div>
-            <div class="game-cell"></div>
-            <div class="game-cell"></div>
-            <div class="game-cell"></div>
-            <div class="game-cell"></div>
-            <div class="game-cell"></div>
+            <div class="cell" id="0"></div>
+            <div class="cell" id="1"></div>
+            <div class="cell" id="2"></div>
+            <div class="cell" id="3"></div>
+            <div class="cell" id="4"></div>
+            <div class="cell" id="5"></div>
+            <div class="cell" id="6"></div>
+            <div class="cell" id="7"></div>
+            <div class="cell" id="8"></div>
 
-        </div>
+        </div>        
+            
+            <button class="restart">Restart</button>
 
-        
-
-                
-    </div>
-    <script scr="app.js"></script>
+       
+    </main>
+    <script src="/app.js"></script>
 
     
 </body>
